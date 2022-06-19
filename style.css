@@ -886,6 +886,10 @@ footer .install img {
   #blog {
     padding: 150px 50px 0 50px;
   }
+  /* Contact Page */
+  #form-details form {
+    width: 50%;
+  }
 }
 @media (max-width: 477px) {
   .section-p1 {
@@ -977,6 +981,31 @@ footer .install img {
   }
   #about-app .about-video {
     width: 100%;
+  }
+  /* contact page */
+  #contact-details {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #contact-details .details {
+    width: 100%;
+  }
+  #contact-details .contact-map {
+    width: 100%;
+    height: 400px;
+  }
+  #form-details {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 20px;
+    border: 1px solid #e1e1e1;
+  }
+  #form-details form {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 @media (max-width: 320px) {
