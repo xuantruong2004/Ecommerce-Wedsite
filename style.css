@@ -539,13 +539,151 @@ footer .install img {
 #prodetails .small-img-col {
   flex-basis: 24.5%;
 }
+#prodetails .small-img-col:hover {
+  cursor: pointer;
+}
 #prodetails .single-pro-details {
   width: 50%;
   padding-top: 30px;
 }
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+#prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus {
+  outline: none;
+}
+#prodetails .single-pro-details button {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+#prodetails .single-pro-details button:hover {
+  opacity: 0.8;
+}
+#prodetails .single-pro-details span {
+  line-height: 25px;
+  text-align: justify;
+}
+
 /* Blog Page */
 
+#page-header.blog-header {
+  background-image: url("./img/banner/b19.jpg");
+}
+#blog {
+  padding: 150px 150px 0 150px;
+}
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+#blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+#blog .blog-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#blog .blog-details {
+  width: 50%;
+  position: relative;
+}
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+#blog .blog-details a:after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
+#blog .blog-details a:hover {
+  color: var(--primary-color);
+}
+#blog .blog-details a:hover::after {
+  background-color: var(--primary-color);
+}
+#blog .blog-box h1 {
+  position: absolute;
+  color: #ccc;
+  font-size: 70px;
+  font-weight: 600;
+  top: -45px;
+  left: 0;
+  z-index: -1;
+}
+.blog-box + .blog-box {
+  margin-top: 90px;
+}
+
 /* About Page */
+#page-header.about-header {
+  background-image: url("./img/about/banner.png");
+}
+#about-head {
+  display: flex;
+  align-items: center;
+}
+#about-head .about-img {
+  width: 50%;
+  height: auto;
+  padding-right: 40px;
+}
+#about-head .about-img img {
+  width: 100%;
+  object-fit: cover;
+}
+#about-head .about-desc {
+  width: 50%;
+  height: auto;
+}
+#about-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about-app a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+#about-app .about-video {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  margin: 30px auto 0 auto;
+}
+#about-app video {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+}
 
 /*Contact Page  */
 
@@ -636,6 +774,22 @@ footer .install img {
   #sm-banner .banner-box2 {
     margin-top: 20px;
   }
+  /* Signle Product */
+  #prodetails {
+    flex-direction: column;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  /* Blog page */
+  #blog {
+    padding: 150px 50px 0 50px;
+  }
 }
 @media (max-width: 477px) {
   .section-p1 {
@@ -687,6 +841,46 @@ footer .install img {
   }
   #navbar {
     width: 200px;
+  }
+  /* blog page */
+  #blog {
+    padding: 100px 30px 40px 30px;
+  }
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #blog .blog-details {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+  }
+  /* About page */
+  #about-head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #about-head .about-desc {
+    width: 100%;
+    height: auto;
+  }
+  #about-head .about-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding-right: 0px;
+  }
+  #about-app {
+    text-align: center;
+  }
+  #about-app .about-video {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {

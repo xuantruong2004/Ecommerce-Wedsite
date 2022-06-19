@@ -84,15 +84,93 @@
           <option>Large</option>
         </select>
         <input type="number" value="1" />
-        <button>Add To Cart</button>
+        <button class="normal">Add To Cart</button>
         <h4>Product Details</h4>
-        <p>
+        <span>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
           rerum esse ea ipsam deleniti voluptatem repellendus beatae consequatur
           maxime repudiandae quam magni aut temporibus nemo accusantium enim
           neque eum obcaecati?
-        </p>
+        </span>
       </div>
+    </section>
+    <section id="product1" class="section-p1">
+      <h2>Feature Products</h2>
+      <p>Summer Collection New Morden Design</p>
+      <div class="pro-container">
+        <div class="pro-item">
+          <img src="./img/products/n1.jpg" alt="" />
+          <div class="pro-des">
+            <span>adidas</span>
+            <h5>Cartoon Astranaut T-shirt</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <div class="pro-cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+          </div>
+        </div>
+        <div class="pro-item">
+          <img src="./img/products/n2.jpg" alt="" />
+          <div class="pro-des">
+            <span>adidas</span>
+            <h5>Cartoon Astranaut T-shirt</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <div class="pro-cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+          </div>
+        </div>
+        <div class="pro-item">
+          <img src="./img/products/n3.jpg" alt="" />
+          <div class="pro-des">
+            <span>adidas</span>
+            <h5>Cartoon Astranaut T-shirt</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <div class="pro-cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+          </div>
+        </div>
+        <div class="pro-item">
+          <img src="./img/products/n4.jpg" alt="" />
+          <div class="pro-des">
+            <span>adidas</span>
+            <h5>Cartoon Astranaut T-shirt</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <div class="pro-cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+          </div>
+        </div>
+       
     </section>
     <section id="newsletter" class="section-p1 section-m1">
       <div class="newstext">
@@ -158,6 +236,22 @@
         <p>@ 2022. TruongXuan etc- HTML CSS Ecommerce Template</p>
       </div>
     </footer>
+    <script>
+      var MainImg = document.getElementById("MainImg");
+      var smalling = document.getElementsByClassName("small-img");
+      smalling[0].onclick = function () {
+        MainImg.src = smalling[0].src;
+      };
+      smalling[1].onclick = function () {
+        MainImg.src = smalling[1].src;
+      };
+      smalling[2].onclick = function () {
+        MainImg.src = smalling[2].src;
+      };
+      smalling[3].onclick = function () {
+        MainImg.src = smalling[3].src;
+      };
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
