@@ -687,6 +687,44 @@ footer .install img {
 
 /*Contact Page  */
 
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact-details .details {
+  width: 40%;
+}
+#contact-details .details span {
+  font-size: 12px;
+}
+#contact-details .details h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#contact-details .details ul {
+  list-style-type: none;
+}
+#contact-details .details li {
+  display: flex;
+  align-items: flex-start;
+}
+#contact-details .details li i {
+  margin-top: 15px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+#contact-details .details p {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
 @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
